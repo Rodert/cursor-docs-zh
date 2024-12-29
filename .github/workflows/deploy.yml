@@ -30,9 +30,10 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
-          cache: 'npm'
       - name: Install dependencies
-        run: npm install -g mintlify
+        run: |
+          npm install -g mintlify@latest
+          npm init -y
       - name: Build
         run: mintlify build
       - name: Setup Pages
