@@ -18,18 +18,6 @@ npm install mintlify
 mintlify dev
 ```
 
-## 部署
-
-文档会在推送到 main 分支时自动构建和部署。只需要：
-
-```bash
-git add .
-git commit -m "docs: update documentation"
-git push
-```
-
-GitHub Actions 会自动构建并部署最新的文档到 GitHub Pages。
-
 ### 故障排除
 
 - Mintlify dev 无法运行 - 运行 `mintlify install` 重新安装依赖。
