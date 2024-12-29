@@ -9,7 +9,7 @@
 安装 [Mintlify CLI](https://www.npmjs.com/package/mintlify) 来在本地预览文档更改。使用以下命令安装：
 
 ```bash
-npm i -g mintlify
+npm i mintlify
 ```
 
 在文档根目录（包含 mint.json 的目录）运行以下命令：
