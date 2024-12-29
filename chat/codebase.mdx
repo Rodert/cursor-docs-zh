@@ -1,32 +1,31 @@
 ---
-title: "With Codebase"
+title: "与代码库交互"
 ---
 
-### Default Codebase Chat 
+### 默认代码库聊天
 
-If a codebase isn't [indexed](/context/codebase-indexing), Cursor Chat will first attempt to compute a few search queries to
-be used to search across your codebase. For better accuracy, it's recommended to use [embeddings search](#embeddings-search).
+如果代码库尚未[建立索引](/context/codebase-indexing)，Cursor Chat 将首先尝试计算几个搜索查询，
+用于在您的代码库中搜索。为了获得更好的准确性，建议使用[嵌入式搜索](#embeddings-search)。
 
 <Frame>
 <img src="/images/chat/no-embeddings.png" />
 </Frame>
 
+### 嵌入式搜索
 
-### Embeddings Search
+通过[代码库索引](/context/codebase-indexing)，Cursor Chat 可以根据您的代码库准确生成回复。
 
-With [codebase indexing](/context/codebase-indexing), Cursor Chat can accurately generate responses based on your codebase.
-
-By pressing `Ctrl/⌘ + Enter` after typing a message, Cursor Chat scans through your indexed codebase to find pieces of relevant code. This is generally
-good for quickly including code snippets to be taken into the context of the conversation. For more control over the codebase search and better accuracy, 
-you can use `@codebase`.
+在输入消息后按 `Ctrl/⌘ + Enter`，Cursor Chat 会扫描您已索引的代码库以找到相关的代码片段。这通常
+适用于快速包含代码片段到对话上下文中。要更好地控制代码库搜索并获得更高的准确性，
+您可以使用 `@codebase`。
 
 <Frame>
 <img src="/images/chat/embeddings.png" />
 </Frame>
 
-### Advanced Codebase Search 
+### 高级代码库搜索
 
-Cursor codebase chat goes through a more detailed search when `@Codebase` is used. 
+当使用 `@Codebase` 时，Cursor 代码库聊天会进行更详细的搜索。
 
-See more about `@Codebase` [here](/context/@-symbols/@-codebase).
+在[这里](/context/@-symbols/@-codebase)了解更多关于 `@Codebase` 的信息。
 

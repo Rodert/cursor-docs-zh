@@ -21,15 +21,15 @@
   },
   "metadata": {
     "og:site_name": "Cursor",
-    "og:title": "Cursor - Build Software Faster",
-    "og:description": "Built to make you extraordinarily productive, Cursor is the best way to code with AI.",
+    "og:title": "Cursor - 更快地构建软件",
+    "og:description": "Cursor 是使用 AI 编程的最佳方式，旨在让您的工作效率非凡。",
     "og:url": "https://cursor.com",
     "og:image": "/images/hero.png",
-    "og:locale": "en_US",
+    "og:locale": "zh_CN",
     "og:logo": "/images/logo/app-logo.svg",
     "article:publisher": "Anysphere Inc.",
-    "twitter:title": "Cursor - Build Software Faster",
-    "twitter:description": "Built to make you extraordinarily productive, Cursor is the best way to code with AI.",
+    "twitter:title": "Cursor - 更快地构建软件",
+    "twitter:description": "Cursor 是使用 AI 编程的最佳方式，旨在让您的工作效率非凡。",
     "twitter:url": "https://cursor.com",
     "twitter:image": "/images/hero.png",
     "twitter:site": "@cursor_ai",
@@ -42,12 +42,12 @@
       "url": "https://github.com/getcursor/docs"
     },
     {
-      "name": "Forum",
+      "name": "论坛",
       "url": "https://forum.cursor.com/"
     }
   ],
   "topbarCtaButton": {
-    "name": "Dashboard",
+    "name": "控制台",
     "url": "https://cursor.com/settings"
   },
   "anchors": [
@@ -58,13 +58,13 @@
       "iconType": "brands"
     },
     {
-      "name": "Forum",
+      "name": "论坛",
       "icon": "newspaper",
       "url": "https://forum.cursor.com/",
       "iconType": "duotone"
     },
     {
-      "name": "Email",
+      "name": "邮箱",
       "icon": "headset",
       "url": "mailto:hi@cursor.com",
       "iconType": "duotone"
@@ -72,15 +72,15 @@
   ],
   "navigation": [
     {
-      "group": "Get Started",
+      "group": "入门指南",
       "pages": ["get-started/migrate-from-vscode", "get-started/usage"]
     },
     {
-      "group": "Tab",
+      "group": "Tab 补全",
       "pages": ["tab/overview", "tab/from-gh-copilot", "tab/advanced-features"]
     },
     {
-      "group": "Chat",
+      "group": "AI 对话",
       "pages": [
         "chat/overview",
         "chat/customize",
@@ -89,16 +89,16 @@
       ]
     },
     {
-      "group": "Cmd K",
+      "group": "命令面板",
       "pages": ["cmdk/overview", "cmdk/terminal-cmdk"]
     },
     {
-      "group": "Context",
+      "group": "上下文",
       "pages": [
         "context/codebase-indexing",
         "context/rules-for-ai",
         {
-          "group": "@ Symbols",
+          "group": "@ 符号",
           "pages": [
             "context/@-symbols/basic",
             "context/@-symbols/@-files",
@@ -117,7 +117,7 @@
       ]
     },
     {
-      "group": "Advanced",
+      "group": "高级功能",
       "pages": [
         "advanced/models",
         "advanced/api-keys",
@@ -126,13 +126,13 @@
       ]
     },
     {
-      "group": "Privacy",
+      "group": "隐私",
       "pages": [
         "privacy/privacy"
       ]
     },    
     {
-      "group": "Troubleshooting",
+      "group": "故障排除",
       "pages": [
         "troubleshooting/common-issues",
         "troubleshooting/troubleshooting-guide"

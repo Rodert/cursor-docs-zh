@@ -1,49 +1,44 @@
 ---
-title: "@Files"
+title: "@文件"
 ---
 
-### `@Files`
+### `@文件`
 
-In AI input boxes such as in Cursor Chat and Cmd K, you can reference entire files by using `@Files`. 
-Also, if you continue to type after `@`, you will see your file search results after the [`@Code`](/context/@-symbols/@-code) strategy.
+在 Cursor Chat 和 Cmd K 等 AI 输入框中，您可以使用 `@文件` 引用整个文件。
+另外，如果您在 `@` 后继续输入，您将在 [`@代码`](/context/@-symbols/@-code) 策略后看到您的文件搜索结果。
 
-
-
-In order to make sure the file you're referencing is the correct file, Cursor will show a preview of the file's path. This is especially useful when you have multiple files with the same name in different folders.
+为了确保您引用的文件是正确的文件，Cursor 会显示文件路径的预览。当您在不同文件夹中有多个同名文件时，这特别有用。
 
 <Frame>
 <img src="/images/context/@file.png"/>
 </Frame>
 
+### 聊天中的长文件引用
 
-### Chat Long File References
-
-In Cursor's Chat, if the contents of a file is too long, Cursor will chunk the file into smaller chunks and rerank them based on relevance to the query.
+在 Cursor 的聊天中，如果文件内容太长，Cursor 会将文件分成更小的块，并根据与查询的相关性重新排序。
 
 <Frame>
 <img src="/images/context/@file-long-file.png"/>
 </Frame>
 
+### Cmd K 分块策略
 
-### Cmd K Chunking Strategy
+对于 Cmd K，Cursor 也会根据内容长度以不同方式使用文件引用。
 
-For Cmd K, Cursor uses the file references differently based on the content length as well.
-
-- auto
-  - Automatically pick one of the three reading strategies based on the file size 
-- full file
-  - The entire file is used as context.
-- outline
-  - Cursor parses the outline of the file and uses the information as context.
-- chunks
-  - Cursor chunks the file into smaller chunks and picks the most relevant one.
+- 自动
+  - 根据文件大小自动选择三种读取策略之一
+- 完整文件
+  - 将整个文件用作上下文。
+- 大纲
+  - Cursor 解析文件的大纲并将信息用作上下文。
+- 分块
+  - Cursor 将文件分成更小的块并选择最相关的一块。
 
 <Frame>
 <img src="/images/context/@file-cmdk.png"/>
 </Frame>
 
+### 拖放
 
-### Drag and Drop
-
-You can drag and drop files from the primary sidebar into Chat or Cmd K to add them as context as well.
+您也可以从主侧边栏将文件拖放到聊天或 Cmd K 中，将它们添加为上下文。
 

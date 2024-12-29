@@ -1,52 +1,47 @@
 ---
-title: "Overview"
+title: "概述"
 ---
 
-Cmd K, also known or "Ctrl K" on Windows/Linux, allows you to generate new code or edit existing code in the editor window.
+Cmd K（在 Windows/Linux 上为 "Ctrl K"）允许您在编辑器窗口中生成新代码或编辑现有代码。
 
 <Frame>
 <img src="/images/cmdk/regular.png" />
 </Frame>
 
-### Prompt Bars 
+### 提示栏
 
-In Cursor, we call the bar that appears when you press `Ctrl/Cmd K` the "Prompt Bar". It works similarly to the AI input box for chat, in 
-which you can type normally, or use [@ symbols](context/@-symbols) to reference other context. 
+在 Cursor 中，我们将按下 `Ctrl/Cmd K` 时出现的栏称为"提示栏"。它的工作方式类似于聊天的 AI 输入框，
+您可以正常输入，或使用 [@ 符号](context/@-symbols) 引用其他上下文。
 
+### 内联生成
 
-### Inline Generation
-
-If no code is selected when you press `Ctrl/Cmd K`, Cursor will generate new code based on the prompt you type in the prompt bar. 
+如果在按下 `Ctrl/Cmd K` 时没有选中代码，Cursor 将根据您在提示栏中输入的提示生成新代码。
 
 <Frame>
 <img src="/images/cmdk/generate.png" />
 </Frame>
 
+### 内联编辑
 
-### Inline Edits 
-
-For in-place edits, you can simply select the code you want to edit and type into the prompt bar.
+对于就地编辑，您只需选择要编辑的代码并在提示栏中输入即可。
 
 <Frame>
 <img src="/images/cmdk/edit.png" />
 </Frame>
 
+### 后续指令
 
-### Follow-up Instructions
+每次生成后，您可以通过在提示栏中添加更多指令来进一步完善提示，然后按 `Enter` 键让 AI 根据您的后续指令重新生成。
 
-After each generation, you can further refine the prompt by adding more instructions to the prompt bar, and pressing `Enter` so the AI regenerates based on your follow-up instructions. 
+### 默认上下文
 
+默认情况下，除了您手动包含的 [@ 符号](/context/@-symbols/@-files)，Cursor 还会尝试找到各种有用的信息来改进代码生成。
 
-### Default Context
+额外的上下文可能包括相关文件、最近查看的文件等。收集后，Cursor 会根据与您的编辑/生成的相关性对上下文项进行排名，
+并将排名靠前的项目保留在大语言模型的上下文中。
 
-By default, Cursor will try to find different kinds of useful information to improve code generation, in addition to the manual [@ symbols](/context/@-symbols/@-files) you include.
+### 快速提问
 
-Additional context may include related files, recently viewed files, and more. After gathering, Cursor ranks the context items by relevance to your edit/generation 
-and keeps the top items in context for the large language model.
+如果您在提示栏中按 `Option/Alt Enter`，Cursor 将回答您关于所选内容和您附加的上下文的任何问题。
 
-
-### Quick Question
-
-If you press `Option/Alt Enter` while in the prompt bar, Cursor will respond to any questions you have about the selection, and the context you have attached. 
-
-The contents of this conversation could be further used in follow-up generations, so you could simply type "do it" after Cursor comes up with a response to generate the code after a quick question.
+这个对话的内容可以在后续生成中继续使用，所以在 Cursor 给出回答后，您只需输入"do it"就可以生成代码。

@@ -1,43 +1,41 @@
 ---
-title: Custom API Keys
+title: 自定义 API 密钥
 ---
 
+### OpenAI API 密钥
 
-### OpenAI API Keys
+Cursor 允许您输入自己的 OpenAI API 密钥，以便按照您自己的成本发送任意数量的 AI 消息。
 
-Cursor lets you input your own OpenAI API key to send as many AI messages as you want at your own cost.
-
-You can get your own API key from [here](https://platform.openai.com/account/api-keys). To use your own API key, go to `Cursor Settings` > `Models` > `OpenAI API Key` and enter your API key. Then, click on the "Verify" button. Once your key is validated, your OpenAI API key will be enabled.
+您可以从[这里](https://platform.openai.com/account/api-keys)获取您自己的 API 密钥。要使用您自己的 API 密钥，请转到 `Cursor 设置` > `模型` > `OpenAI API 密钥` 并输入您的 API 密钥。然后，点击"验证"按钮。一旦您的密钥通过验证，您的 OpenAI API 密钥就会被启用。
 
 <Frame>
   <img src="/images/misc/openai-api.png" />
 </Frame>
 
-### Anthropic API Keys
+### Anthropic API 密钥
 
-Similar to OpenAI, you can also set your own Anthropic API key so that you will be using claude-based models at your own cost. 
+与 OpenAI 类似，您也可以设置自己的 Anthropic API 密钥，这样您就可以按照自己的成本使用基于 Claude 的模型。
 
 <Frame>
   <img src="/images/misc/anthropic-api.png" />
 </Frame>
 
-### Google API Keys
+### Google API 密钥
 
-For Google API keys, you can set your own API key so that you will be using Google models such as `gemini-1.5-flash-500k` at your own cost.
+对于 Google API 密钥，您可以设置自己的 API 密钥，这样您就可以按照自己的成本使用 `gemini-1.5-flash-500k` 等 Google 模型。
 
 <Frame>
   <img src="/images/misc/google-api.png" />
 </Frame>
 
-### Azure Integration
+### Azure 集成
 
-Finally, you can also set your own Azure API key so that you will be using Azure OpenAI models at your own cost.
+最后，您还可以设置自己的 Azure API 密钥，这样您就可以按照自己的成本使用 Azure OpenAI 模型。
 
 <Frame>
   <img src="/images/misc/azure-api.png" />
 </Frame>
 
+### 我的 API 密钥会被存储或离开我的设备吗？
 
-### Will my API key be stored or leave my device?
-
-Your API key will not be stored, but it will be sent up to our server with every request. All requests are routed through our backend, because that's where we do the final prompt building.
+您的 API 密钥不会被存储，但每次请求都会被发送到我们的服务器。所有请求都会通过我们的后端路由，因为最终的提示构建是在那里完成的。

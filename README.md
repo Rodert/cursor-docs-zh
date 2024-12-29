@@ -1,24 +1,24 @@
-# Cursor Docs
+# Cursor 文档
 
-This repo contains the source code for [Cursor's Documentation](https://docs.cursor.com).
+这个仓库包含了 [Cursor 的文档](https://docs.cursor.com) 的源代码。
 
-Please open Pull Requests to suggest helpful changes!
+欢迎提交 Pull Request 来帮助改进文档！
 
-### Development
+### 开发
 
-Install the [Mintlify CLI](https://www.npmjs.com/package/mintlify) to preview the documentation changes locally. To install, use the following command
+安装 [Mintlify CLI](https://www.npmjs.com/package/mintlify) 来在本地预览文档更改。使用以下命令安装：
 
 ```
 npm i -g mintlify
 ```
 
-Run the following command at the root of your documentation (where mint.json is)
+在文档根目录（包含 mint.json 的目录）运行以下命令：
 
 ```
 mintlify dev
 ```
 
-#### Troubleshooting
+#### 故障排除
 
-- Mintlify dev isn't running - Run `mintlify install` it'll re-install dependencies.
-- Page loads as a 404 - Make sure you are running in a folder with `mint.json`
+- Mintlify dev 无法运行 - 运行 `mintlify install` 重新安装依赖。
+- 页面显示 404 - 确保你在包含 `mint.json` 的文件夹中运行命令。

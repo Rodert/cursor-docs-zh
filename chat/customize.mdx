@@ -1,39 +1,37 @@
 ---
-title: Customize
+title: 自定义设置
 ---
 
-### Choose an AI Model
+### 选择 AI 模型
 
-Pick your preferred AI model through the [model toggle](/advanced/models#model-dropdown), and Cursor Chat will use that model to generate responses. You can toggle between models by pressing `Ctrl/⌘ /`. 
+通过[模型切换器](/advanced/models#model-dropdown)选择您偏好的 AI 模型，Cursor Chat 将使用该模型生成回复。您可以通过按 `Ctrl/⌘ /` 在不同模型之间切换。
 
-By default, Cursor Chat uses OpenAI's `GPT-4` for its AI model (specifically, the `gpt-4` label points to our instance of GPT4-Turbo).
+默认情况下，Cursor Chat 使用 OpenAI 的 `GPT-4` 作为其 AI 模型（具体来说，`gpt-4` 标签指向我们的 GPT4-Turbo 实例）。
 
-The AI model you choose for Chat will be saved for future sessions, so you don't have to change it every time you open Cursor Chat.
+您为聊天选择的 AI 模型将保存到未来的会话中，因此您不必每次打开 Cursor Chat 时都重新更改。
 
 <Frame>
   <img src="/images/chat/model-toggle.png" />
 </Frame>
 
+### 在编辑器中使用
 
-### In-Editor
+Cursor Chat 也可以作为编辑器标签页使用，只需点击水平的"更多"按钮，然后点击"在编辑器中打开聊天"按钮。
+之后 Cursor Chat 将表现为普通的编辑器标签页。按 `Ctrl/⌘ + L` 将打开聊天标签页并聚焦到它。
 
-Cursor Chat can also be used as an editor tab by clicking on the horizontal "More" button, and then clicking on the "Open Chat in Editor" button.
-Cursor Chat will then behave as a regular editor tab. Pressing `Ctrl/⌘ + L` will bring up the chat tab and focus onto it. 
+### 设置
 
+您可以在 `Cursor 设置` > `功能` > `聊天` 下自定义 Cursor Chat。
 
-### Settings
+这些设置包括：
 
-You can customize the Cursor Chat under `Cursor Settings` > `Features` > `Chat`.
-
-These settings include:
-
-- Always search the web for answers.
-  - This will make the AI model browse the web each query for the most up-to-date information.
-- Add chat fading animation.
-  - This adds a smooth animation to the AI messages as they are generated.
-- Default to no context.
-  - This will make the AI model only use the user message as context, and no additional context such as current file will be included.
-- Auto scroll chat.
-  - This will automatically scroll the chat as the AI generates text when at the bottom of the thread.
-- Narrow scrollbar in the chat pane.
-- Show chat history when starting a new chat.
+- 始终搜索网络获取答案。
+  - 这将使 AI 模型在每次查询时浏览网络以获取最新信息。
+- 添加聊天渐变动画。
+  - 这会为生成的 AI 消息添加平滑的动画效果。
+- 默认不包含上下文。
+  - 这将使 AI 模型仅使用用户消息作为上下文，不包含当前文件等额外上下文。
+- 自动滚动聊天。
+  - 当位于线程底部时，这将随着 AI 生成文本自动滚动聊天。
+- 在聊天面板中使用窄滚动条。
+- 开始新聊天时显示聊天历史。

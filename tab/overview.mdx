@@ -1,38 +1,38 @@
 ---
-title: "Overview"
+title: "概述"
 ---
 
-Cursor Tab is our native autocomplete feature. It's a more powerful Copilot that suggests entire diffs with especially good memory.
+Cursor Tab 是我们原生的自动补全功能。它是一个更强大的 Copilot，能够建议完整的代码差异，并具有特别出色的记忆能力。
 
 <Frame>
   <video src="/images/cpp/cpp-full-video.mp4" autoPlay loop muted playsInline />
 </Frame>
 
-Powered by a custom model, Cursor Tab can:
+由自定义模型驱动，Cursor Tab 可以：
 
-* Suggest edits around your cursor, not just insertions of additional code.
-* Modify multiple lines at once.
-* Make suggestions based on your recent changes and linter errors.
+* 在光标周围提供编辑建议，而不仅仅是插入额外的代码。
+* 同时修改多行代码。
+* 根据您最近的更改和代码检查错误提供建议。
 
-Free users receive 2000 suggestions at no cost. Pro and Business plans receive unlimited suggestions.
+免费用户可以免费获得 2000 次建议。专业版和商业版用户可以获得无限次建议。
 
-### UI
+### 用户界面
 
-When Cursor is only adding additional text, completions will appear as grey text. If a suggestion modifies existing code,
-it will appear as a diff popup to the right of your current line.
+当 Cursor 仅添加额外文本时，补全内容会以灰色文本显示。如果建议修改现有代码，
+它将在当前行的右侧显示为差异弹出框。
 
 <Frame className="flex items-stretch justify-center">
   <img src="/images/cpp/ghost-text-example.png" className="h-full object-cover"/>
   <img src="/images/cpp/preview-box-example.png" className="h-full object-cover"/>
 </Frame>
 
-You can accept a suggestion by pressing `Tab`, or reject it by pressing `Esc`. To partially accept a suggestion word-by-word, press `Ctrl/⌘ →`. 
-To reject a suggestion, just keep typing, or use `Escape` to cancel/hide the suggestion.
+您可以按 `Tab` 键接受建议，或按 `Esc` 键拒绝。要逐字接受建议，请按 `Ctrl/⌘ →`。
+要拒绝建议，只需继续输入，或使用 `Escape` 取消/隐藏建议。
 
-Every keystroke or cursor movement, Cursor will attempt to make a suggestion based on your recent changes. However, Cursor will not always show a suggestion; sometimes the model has predicted that there's no change to be made.
+每次按键或光标移动时，Cursor 都会尝试根据您最近的更改提供建议。但是，Cursor 不会总是显示建议；有时模型会预测不需要进行任何更改。
 
-Cursor can make changes from one line above to two lines below your current line.
+Cursor 可以修改光标当前行上方一行到下方两行的内容。
 
-### Toggling
+### 切换功能
 
-To turn the feature on or off, hover over "Cursor Tab" icon on the status bar in the bottom right of the application.
+要开启或关闭此功能，请将鼠标悬停在应用程序右下角状态栏的 "Cursor Tab" 图标上。

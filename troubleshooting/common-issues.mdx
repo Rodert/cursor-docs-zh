@@ -1,39 +1,39 @@
 ---
-title: Common Issues
+title: 常见问题
 ---
 
-#### I see an update on the changelog but Cursor won't update.
+#### 我在更新日志中看到了更新，但 Cursor 不会更新。
 
-If the update is very new, it might not have rolled out to you yet. We do staged rollouts, which means we release new updates to a few randomly selected users first before releasing them to everyone. Typically, reaching all users takes around 5 hours from the first user. For larger updates, it can take longer.
+如果更新非常新，可能还没有推送到您这里。我们采用分阶段推送，这意味着我们会先向一些随机选择的用户发布新更新，然后再向所有人发布。通常，从第一个用户开始，大约需要 5 小时才能覆盖所有用户。对于较大的更新，可能需要更长时间。
 
-If you don't want to wait, you can redownload Cursor from our [homepage](https://cursor.com/). You'll likely receive the latest update instantly. Don't worry, all of your settings, extensions, etc., will transfer to the redownloaded version. You don't have to uninstall the existing version first.
+如果您不想等待，可以从我们的[主页](https://cursor.com/)重新下载 Cursor。您很可能会立即收到最新更新。不用担心，您的所有设置、扩展等都会转移到重新下载的版本。您不需要先卸载现有版本。
 
-#### I have issues with my GitHub login in Cursor / How do I log out of GitHub in Cursor?
+#### 我在 Cursor 中遇到 GitHub 登录问题 / 如何在 Cursor 中登出 GitHub？
 
-You can try using the `Sign Out of GitHub` command from the command palette `Ctrl/⌘ + Shift + P`.
+您可以尝试从命令面板 `Ctrl/⌘ + Shift + P` 使用 `登出 GitHub` 命令。
 
-#### I can't use GitHub Codespaces.
+#### 我无法使用 GitHub Codespaces。
 
-Unfortunately, we don't support GitHub Codespaces yet.
+很抱歉，我们目前还不支持 GitHub Codespaces。
 
-#### I have errors connecting to Remote SSH.
+#### 我在连接 Remote SSH 时遇到错误。
 
-Currently, we don't support SSHing into Windows machines. If you're not using a Windows machine, please report your issue to us in the [forum](https://forum.cursor.com/). It would be helpful to include some logs for better assistance.
+目前，我们不支持 SSH 连接到 Windows 机器。如果您不是使用 Windows 机器，请在[论坛](https://forum.cursor.com/)向我们报告您的问题。包含一些日志会对我们提供更好的帮助。
 
-#### Cursor Tab and Cmd K do not work behind my corporate proxy.
+#### Cursor Tab 和 Cmd K 在我的企业代理后面不工作。
 
-Cursor Tab and Cmd K use HTTP/2 by default, which allows us to use less resources with lower latency. Some corporate proxies (e.g. Zscaler in certain configurations) block HTTP/2. To fix this, you can set `"cursor.general.disableHttp2": true` in the settings (`Cmd/Ctrl + ,` and then search for `http2`).
+Cursor Tab 和 Cmd K 默认使用 HTTP/2，这使我们能够以更低的延迟使用更少的资源。一些企业代理（例如某些配置下的 Zscaler）会阻止 HTTP/2。要解决这个问题，您可以在设置中设置 `"cursor.general.disableHttp2": true`（按 `Cmd/Ctrl + ,` 然后搜索 `http2`）。
 
-#### I just subscribed to Pro but I'm still on the free plan in the app.
+#### 我刚订阅了专业版，但在应用中仍然是免费计划。
 
-Try logging out and logging back in from [Settings](/get-started/migrate-from-vscode#cursor-settings).
+尝试从[设置](/get-started/migrate-from-vscode#cursor-settings)中登出并重新登录。
 
-#### When will my usage reset again?
+#### 我的使用量何时会重置？
 
-If you're subscribed to Pro you can click on `Manage Subscription` from the [Dashboard](https://cursor.com/settings) and your plan renewal date will be displayed at the top.
+如果您订阅了专业版，您可以从[控制台](https://cursor.com/settings)点击 `管理订阅`，您的计划续订日期将显示在顶部。
 
-If you're a free user you can check when you got the first email from us in your inbox. Your usage will reset every month from that date.
+如果您是免费用户，您可以在收件箱中查看您收到我们的第一封邮件的时间。您的使用量将从该日期起每月重置一次。
 
-#### How do I uninstall Cursor?
+#### 如何卸载 Cursor？
 
-You can follow [this guide](https://code.visualstudio.com/docs/setup/uninstall) to uninstall Cursor. Replace every occurrence of "VS Code" or "Code" with "Cursor", and ".vscode" with ".cursor".
+您可以按照[这个指南](https://code.visualstudio.com/docs/setup/uninstall)卸载 Cursor。将每处出现的 "VS Code" 或 "Code" 替换为 "Cursor"，将 ".vscode" 替换为 ".cursor"。

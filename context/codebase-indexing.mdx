@@ -1,26 +1,26 @@
 ---
-title: "Codebase Indexing"
+title: "代码库索引"
 ---
 
-### Index your Codebase
+### 为代码库建立索引
 
-For better and more accurate codebase answers using `@codebase` or `Ctrl/⌘ Enter`, you can index your codebase. Behind the scenes, Cursor
-computes embeddings for each file in your codebase, and will use these to improve the accuracy of your codebase answers.
+要使用 `@codebase` 或 `Ctrl/⌘ Enter` 获得更好、更准确的代码库答案，您可以为代码库建立索引。在后台，Cursor
+会为代码库中的每个文件计算嵌入向量，并使用这些向量来提高代码库答案的准确性。
 
-Your codebase index will automatically synchronize with your latest codebase changes.
+您的代码库索引将自动与最新的代码库更改同步。
 
-The status of your codebase indexing is under `Cursor Settings` > `Features` > `Codebase Indexing`.
+您可以在 `Cursor 设置` > `功能` > `代码库索引` 下查看代码库索引的状态。
 
 <Frame>
 <img src="/images/chat/codebase-indexing.png" />
 </Frame>
 
-### Advanced Settings
+### 高级设置
 
-By default, Cursor will index all files in your codebase.
+默认情况下，Cursor 会索引代码库中的所有文件。
 
-You can also expand the `Show Settings` section to access more advanced options.
-Here, you can decide whether you want to enable automatic indexing for new repositories and configure the files
-that Cursor will ignore during repository indexing, in addition to your .gitignore settings.
+您也可以展开 `显示设置` 部分来访问更多高级选项。
+在这里，除了 .gitignore 设置外，您还可以决定是否要为新仓库启用自动索引，并配置
+Cursor 在仓库索引期间要忽略的文件。
 
-If you have any large content files in your project that the AI definitely doesn’t need to read, [ignoring those files](/context/ignore-files) could improve the accuracy of the answers.
+如果您的项目中有一些 AI 肯定不需要读取的大型内容文件，[忽略这些文件](/context/ignore-files)可以提高答案的准确性。

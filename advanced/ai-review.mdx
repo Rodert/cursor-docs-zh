@@ -1,34 +1,33 @@
 ---
-title: AI Review (Beta)
+title: AI 代码审查（测试版）
 ---
 
-AI Review is a feature that allows you to review your recent changes in your codebase to catch any potential bugs.
+AI 代码审查是一个允许您审查代码库中最近更改以发现潜在错误的功能。
 
 <Frame>
-<img src="/images/advanced/review.png" alt="AI Review" />
+<img src="/images/advanced/review.png" alt="AI 代码审查" />
 </Frame>
 
-You can click into individual review items to see the full context in the editor, and chat with the AI to get more information.
+您可以点击单个审查项目以在编辑器中查看完整上下文，并与 AI 聊天以获取更多信息。
 
-### Custom Review Instructions
+### 自定义审查指令
 
-In order for AI Review to work in your favor, you can provide custom instructions for the AI to focus on. For example,
-if you want the AI to focus on performance-related issues, you could put: 
+为了让 AI 代码审查更好地为您服务，您可以提供自定义指令让 AI 重点关注。例如，
+如果您想让 AI 关注性能相关的问题，您可以输入：
 
 ```
-focus on the performance of my code
+关注我的代码性能
 ```
 
-This way, AI Review will focus on the performance of your code when scanning through your changes. 
+这样，AI 代码审查在扫描您的更改时将重点关注代码性能。
 
+### 审查选项
 
-### Review Options
+目前，您有几个可供选择的审查选项：
 
-Currently, you have a several options to choose from to review:
-
-- `Review Working State`
-  - This will review your uncommitted changes.
-- `Review Diff with Main Branch`
-  - This will review the diff between your current working state and the main branch.
-- `Review Last Commit`
-  - This will review the last commit you made.
+- `审查工作状态`
+  - 这将审查您未提交的更改。
+- `与主分支对比审查`
+  - 这将审查您当前工作状态与主分支之间的差异。
+- `审查最后一次提交`
+  - 这将审查您最后一次提交的内容。

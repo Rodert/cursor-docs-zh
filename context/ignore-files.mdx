@@ -1,22 +1,22 @@
 ---
-title: Ignore Files
+title: 忽略文件
 ---
 
-To ignore files to be included in Cursor features such as [codebase indexing](/context/codebase-indexing), you 
-can use a `.cursorignore` file in the root of your project. It works the same way as `.gitignore` works for git.
+要在 Cursor 功能（如[代码库索引](/context/codebase-indexing)）中忽略某些文件，您
+可以在项目根目录中使用 `.cursorignore` 文件。它的工作方式与 `.gitignore` 对 git 的工作方式相同。
 
-`.cursorignore` respects `.gitignore`. If you already have `.gitignore`, the files will be ignored by default.
-If you want to ignore additional files, you can add them to the `.cursorignore` file.
+`.cursorignore` 会遵循 `.gitignore` 的设置。如果您已经有 `.gitignore`，这些文件默认会被忽略。
+如果您想忽略额外的文件，可以将它们添加到 `.cursorignore` 文件中。
 
-### An Example `.cursorignore` file
+### `.cursorignore` 文件示例
 
 ```
-# Ignore all files in the `dist` directory
+# 忽略 `dist` 目录中的所有文件
 dist/
 
-# Ignore all `.log` files
+# 忽略所有 `.log` 文件
 *.log
 
-# Ignore specific file `config.json`
+# 忽略特定文件 `config.json`
 config.json
 ```
