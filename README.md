@@ -9,7 +9,7 @@
 安装 [Mintlify CLI](https://www.npmjs.com/package/mintlify) 来在本地预览文档更改。使用以下命令安装：
 
 ```bash
-npm i mintlify
+npm install mintlify
 ```
 
 在文档根目录（包含 mint.json 的目录）运行以下命令：
@@ -17,6 +17,18 @@ npm i mintlify
 ```bash
 mintlify dev
 ```
+
+## 部署
+
+文档会在推送到 main 分支时自动构建和部署。只需要：
+
+```bash
+git add .
+git commit -m "docs: update documentation"
+git push
+```
+
+GitHub Actions 会自动构建并部署最新的文档到 GitHub Pages。
 
 ### 故障排除
 
