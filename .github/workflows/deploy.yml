@@ -31,21 +31,18 @@ jobs:
         run: ls -la
       - name: Install dependencies
         run: |
-          cd docs
           npm init -y
           npm install mintlify --save-dev
           npm install
           npx mintlify install
       - name: Build
-        run: |
-          cd docs
-          npx mintlify build
+        run: npx mintlify build
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: 'docs/.mintlify/build'
+          path: '.mintlify/build'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2 
