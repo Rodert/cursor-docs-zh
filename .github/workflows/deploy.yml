@@ -28,15 +28,19 @@ jobs:
         with:
           node-version: 18
       - name: Install dependencies
-        run: npm install -g mintlify
+        run: |
+          npm install -g mintlify
+          npm install
       - name: Build
-        run: mintlify build
+        run: |
+          cd docs
+          mintlify build
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: '.mintlify/build'
+          path: 'docs/.mintlify/build'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2 
