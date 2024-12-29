@@ -31,8 +31,8 @@ jobs:
         run: ls -la
       - name: Install dependencies
         run: |
-          npm install -g mintlify@latest
-          npm init -y
+          npm i mintlify
+          mintlify install
       - name: Build
         run: mintlify build
       - name: Setup Pages
