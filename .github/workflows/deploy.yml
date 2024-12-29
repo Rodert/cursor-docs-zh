@@ -23,26 +23,24 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-        with:
-          path: cursor_docs_zh
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 18
+      - name: List directory
+        run: ls -la
       - name: Install dependencies
-        working-directory: cursor_docs_zh/docs
         run: |
           npm install -g mintlify@latest
           npm init -y
       - name: Build
-        working-directory: cursor_docs_zh/docs
         run: mintlify build
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: 'cursor_docs_zh/docs/.mintlify/build'
+          path: '.mintlify/build'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2 
