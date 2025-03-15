@@ -12,6 +12,12 @@
 npm install mintlify
 ```
 
+最好是全局安装
+
+```bash
+npm install -g mintlify
+```
+
 在文档根目录（包含 mint.json 的目录）运行以下命令：
 
 ```bash
